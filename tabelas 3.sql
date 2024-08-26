@@ -1,0 +1,6 @@
+CREATE TABLE Modelos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(50) NOT NULL,
+id_marca INT,
+FOREIGN KEY (id_marca) REFERENCES Marcas (id)
+);
